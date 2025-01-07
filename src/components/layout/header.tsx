@@ -34,11 +34,11 @@ const Header: React.FC = () => {
                 <a href="/contact" className="md:hidden py-1 text-white border border-orange-600 bg-orange-600 hover:border-white rounded-full px-4 hover:bg-white hover:text-orange-600 transition ml-auto" onClick={handleLinkClick}>
                     Contact Us
                 </a>
-                <nav className={`fixed top-0 right-0 bg-[#0B2238] transform ${isOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out md:static md:transform-none overflow-hidden`}>
+                <nav className={`fixed top-0 right-0 md:bg-[#0B2238] bg-orange-500 transform ${isOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out md:static md:transform-none overflow-hidden rounded-bl-lg`}>
                     <div className="flex flex-col space-y-4 space-x-4 p-4 md:flex-row md:space-y-0 md:shadow-none shadow-xl">
-                        <Link href="/about" className="text-gray-400 hover:text-orange-400" onClick={handleLinkClick}>About Us</Link>
-                        <Link href="/services" className="text-gray-400 hover:text-orange-400" onClick={handleLinkClick}>Services</Link>
-                        <Link href="/blog" className="text-gray-400 hover:text-orange-400" onClick={handleLinkClick}>Blog</Link>
+                        <Link href="/about" className="md:text-gray-400 text-white hover:text-orange-400" onClick={handleLinkClick}>About Us</Link>
+                        <Link href="/services" className="md:text-gray-400 text-white hover:text-orange-400" onClick={handleLinkClick}>Services</Link>
+                        <Link href="/blog" className="md:text-gray-400 text-white hover:text-orange-400" onClick={handleLinkClick}>Blog</Link>
                         <Link href="/contact" className="text-white border border-white hover:border-orange-600 rounded-full px-4 hover:bg-orange-600 transition" onClick={handleLinkClick}>
                             Contact Us
                         </Link>
