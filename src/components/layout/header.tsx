@@ -10,7 +10,7 @@ const Header: React.FC = () => {
         setIsOpen(false);
     };
     return (
-        <header className="bg-[#0B2238] text-white p-4 w-full">
+        <header className="bg-[#0B2238] text-white p-4 w-full fixed top-0 left-0 right-0 z-50">
             <div className="container mx-auto flex justify-between items-center">
                 <div className="flex items-center space-x-2">
                     <button
@@ -34,7 +34,7 @@ const Header: React.FC = () => {
                 <a href="/contact" className="md:hidden py-1 text-white border border-orange-600 bg-orange-600 hover:border-white rounded-full px-4 hover:bg-white hover:text-orange-600 transition ml-auto" onClick={handleLinkClick}>
                     Contact Us
                 </a>
-                <nav className={`fixed space-x-4 top-0 right-0 bg-[#0B2238] transform ${isOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out md:static md:transform-none overflow-hidden`}>
+                <nav className={`fixed top-0 right-0 bg-[#0B2238] transform ${isOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out md:static md:transform-none overflow-hidden`}>
                     <div className="flex flex-col space-y-4 space-x-4 p-4 md:flex-row md:space-y-0 md:shadow-none shadow-xl">
                         <Link href="/about" className="text-gray-400 hover:text-orange-400" onClick={handleLinkClick}>About Us</Link>
                         <Link href="/services" className="text-gray-400 hover:text-orange-400" onClick={handleLinkClick}>Services</Link>
