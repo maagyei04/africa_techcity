@@ -1,32 +1,39 @@
-// import Image from 'next/image';
+"use client";
+
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function BlogPage() {
-    // const articles = [
-    //     {
-    //         category: 'Education',
-    //         title: 'The Power of Project-Based Learning: 3 Important Factors of Productivity',
-    //         author: 'Prof Akwesi Osei',
-    //         image: '/images/article1.png',
-    //     },
-    //     {
-    //         category: 'Education',
-    //         title: 'The Power of Project-Based Learning: 3 Important Factors of Productivity',
-    //         author: 'Prof Akwesi Osei',
-    //         image: '/images/article2.png',
-    //     },
-    //     {
-    //         category: 'Education',
-    //         title: 'The Power of Project-Based Learning: 3 Important Factors of Productivity',
-    //         author: 'Prof Akwesi Osei',
-    //         image: '/images/article3.png',
-    //     },
-    //     {
-    //         category: 'Education',
-    //         title: 'The Power of Project-Based Learning: 3 Important Factors of Productivity',
-    //         author: 'Prof Akwesi Osei',
-    //         image: '/images/article4.png',
-    //     },
-    // ];
+    const articles = [
+        {
+            category: 'Education',
+            title: 'Outsourcing Industry Overview',
+            author: 'Mr Yaw Owusu',
+            image: '/images/oi.png',
+            page: '/blog/outsourcing-industry-overview',
+        },
+        {
+            category: 'Technology',
+            title: 'The Future of AI and Machine Learning',
+            author: 'Dr. Jane Smith',
+            image: '/images/s1.png',
+            page: '/blog/future-of-ai-and-machine-learning',
+        },
+        {
+            category: 'Entrepreneurship',
+            title: 'Startup Success Stories: Lessons Learned',
+            author: 'John Doe',
+            image: '/images/a2.jpg',
+            page: '/blog/startup-success-stories-lessons-learned',
+        },
+        {
+            category: 'Business',
+            title: 'Outsourcing Strategies for Small Businesses',
+            author: 'Sarah Johnson',
+            image: '/images/a1.png',
+            page: '/blog/outsourcing-strategies-for-small-businesses',
+        },
+    ];
 
     return (
         <div className="bg-darkBlue text-white min-h-screen py-20">
@@ -35,28 +42,31 @@ export default function BlogPage() {
                 <p className="text-md mb-8 text-gray-500">
                     Our blog is dedicated to empowering entrepreneurs with actionable advice, success stories, and resources to help you grow your business and make a lasting impact.
                 </p>
-                <h3 className="text-3xl font-bold py-20 mb-8">Popular Articles</h3>
-                <div className="grid md:grid-cols-4 gap-8">
-                    <div className="bg-darkBlueLight p-4 rounded-lg shadow-md col-span-4">
-                        <p className="text-gray-400 text-lg">No posts yet!</p>
-                    </div>
-                    {/* {articles.map((article, index) => (
-                            <div key={index} className="bg-darkBlueLight p-4 rounded-lg shadow-md">
+                {articles.length > 0 ? (
+                    <div className="grid md:grid-cols-4 gap-8">
+                        {articles.map((article, index) => (
+                            <Link key={index} href={article.page} className="relative rounded-lg overflow-hidden">
                                 <Image
                                     src={article.image}
                                     alt={article.title}
-                                    width={300}
-                                    height={200}
-                                    className="rounded-t-lg"
+                                    width={500}
+                                    height={300}
+                                    className="w-full h-auto"
                                 />
-                                <div className="p-4">
-                                    <p className="text-orange-500 font-bold">{article.category}</p>
-                                    <h4 className="font-bold mt-2">{article.title}</h4>
-                                    <p className="text-gray-300 mt-1">{article.author}</p>
+                                <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                                    <div className="text-center text-white">
+                                        <h3 className="text-xl font-bold mb-2">{article.title}</h3>
+                                        <p className="text-sm">{article.author}</p>
+                                    </div>
                                 </div>
-                            </div>
-                        ))} */}
-                </div>
+                            </Link>
+                        ))}
+                    </div>
+                ) : (
+                    <div className="bg-darkBlueLight p-4 rounded-lg shadow-md col-span-4">
+                        <p className="text-gray-400 text-lg">No posts yet!</p>
+                    </div>
+                )}
             </div>
         </div>
     );

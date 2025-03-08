@@ -2,24 +2,25 @@ import Image from 'next/image';
 
 const teamMembers = [
     {
-        name: 'Mr Yaw Owusu',
-        position: 'Managing Director',
-        image: '/images/f1.png',
-    },
-    {
-        name: 'Mr Kassoum Coulibaly',
-        position: 'Strategic Advisor',
-        image: '/images/f2.png',
-    },
-    {
         name: 'Mr Thomas Nash',
         position: 'Board Member',
-        image: '/images/f3.png',
+        image: '/images/f7.png',
+        company: 'Africa TechCity',
+        location: 'Washington DC'
     },
     {
-        name: 'Mr Papa Owusu',
-        position: 'Board Member',
-        image: '/images/f4.png',
+        name: 'Mr Yaw Owusu',
+        position: 'Managing Director',
+        image: '/images/f6.png',
+        company: 'Africa TechCity',
+        location: 'Kumasi, Ghana'
+    },
+    {
+        name: 'Mr Joseph Adjei',
+        position: 'Advisor',
+        image: '/images/f5.png',
+        company: 'Africa TechCity',
+        location: 'Washington DC'
     },
 ];
 
@@ -33,6 +34,24 @@ export default function AboutPage() {
                         <h3 className="text-3xl font-bold text-orange-500 mb-4">Innovation and Impact at AfricaTechcity</h3>
                         <p className="text-gray-400 mb-8">
                             Our values of integrity, collaboration, and innovation guide us in every project we undertake, ensuring that we deliver exceptional results while fostering a supportive community.
+                        </p>
+                        <p className="text-gray-400 mb-8">
+                            Africa Techcity is a coworking innovation hub that specializes in (i) software training (ii),
+                            technology and business outsourcing, servicing clients primarily in West Africa and North
+                            America.
+                        </p>
+                        <p className="text-gray-400 mb-8">
+                            Harvard Business Review has identified outsourcing as one of the most important management
+                            ideas and practices of this century. According to the California-based Grand View Research, the
+                            global business process outsourcing (BPO) market was valued at $245.91 billion in 2021, and is
+                            projected to reach $435.89 billion by 2028.
+                        </p>
+                        <p className="text-gray-400 mb-8">
+                            Ghana is one of the top-performing African economies in the World Bank’s ease of doing
+                            business index. Management consulting firm AT Kearney (Chicago) recently ranked Ghana
+                            among the most competitive outsourcing destinations in the world. Well ahead of its African
+                            neighbors, including Nigeria and South Africa, Ghana’s economy is projected to grow at
+                            3.4%–5.0% in 2023-2028.
                         </p>
                     </div>
 
@@ -119,6 +138,9 @@ export default function AboutPage() {
                                             <div className="p-4">
                                                 <h4 className="font-bold text-black">{member.name}</h4>
                                                 <p className='text-gray-500'>{member.position}</p>
+                                                <p className='text-gray-500'>{member.company}</p>
+                                                <p className='text-gray-500'>{member.location}</p>
+
                                             </div>
                                         </div>
                                     ))}

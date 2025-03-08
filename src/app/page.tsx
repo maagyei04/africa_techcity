@@ -8,7 +8,7 @@ export default function Home() {
     <div className="bg-darkBlue text-white px-5 md:px-20">
       <main className="text-center py-20">
         <h2 className="text-4xl font-bold mb-4 max-w-3xl mx-auto">Collaborate, <span className="text-orange-500">Create</span>, and Build with AfricaTechcity</h2>
-        <p className="max-w-4xl mx-auto mb-8 text-gray-400">Join a community where creativity meets purpose. At AfricaTechcity, we provide the resources, guidance, and collaborative spaces that empower you to turn ideas into impact</p>
+        <p className="max-w-4xl mx-auto mb-8 text-gray-400">Join a community where creativity meets purpose. At AfricaTechcity, we provide the resources, guidance, and collaborative spaces that empower you to thrive and turn ideas into impact</p>
         <Link href="/services" className="bg-orange-500 text-white px-6 py-3 rounded-3xl">Explore Our Services</Link>
       </main>
 
@@ -58,7 +58,7 @@ export default function Home() {
         <div className="flex flex-col md:flex-row md:justify-between">
           <div className="md:w-1/2 mb-8 md:mb-0">
             <p className="max-w-4xl mx-auto mb-8">
-              Discover how AfricaTechcity brings together the best resources and expertise to drive digital success. We are at the forefront of innovation, offering cutting-edge solutions tailored to your needs. From web and mobile development to AI-driven tools, our team is dedicated to turning your ideas into reality.
+              Discover how AfricaTechcity brings together the best resources and expertise to drive digital success. We are at the forefront of innovation, offering cutting-edge solutions tailored to your needs. From co-working spaces to OffShore Outsourcing, our team is dedicated to turning your ideas into reality.
             </p>
             <p className="max-w-4xl mx-auto mb-8">
               Our collaborative approach ensures that your business thrives in the fast-paced digital world. With a focus on delivering value and measurable results, we empower businesses to streamline operations, enhance customer experiences, and scale effortlessly.
@@ -85,12 +85,30 @@ export default function Home() {
           <div className="text-darkBlue p-6 rounded-xl shadow-md border border-white mb-8 md:mb-0 bg-[#0E304FFF]">
             <Image src="/images/flash.png" alt="flash logo" width={20} height={20} />
             <h4 className="font-bold mb-2">Empower Your Skills with <span className="text-orange-500">Software Training</span></h4>
-            <p className='text-gray-400'>At AfricaTechcity, we provide comprehensive software training programs designed to equip you </p>
+            <p className='text-gray-400'>At AfricaTechcity, we provide comprehensive software training programs designed to equip you with the skills and knowledge needed to excel in the digital landscape.</p>
+          </div>
+          <div className="text-darkBlue p-6 rounded-xl shadow-md border border-white mb-8 md:mb-0 bg-[#0E304FFF]">
+            <Image src="/images/flash.png" alt="flash logo" width={20} height={20} />
+            <h4 className="font-bold mb-2">Unlock Your International Education with <span className="text-orange-500">Study in the USA/Canada</span></h4>
+            <p className='text-gray-400'>AfricaTechcity offers expert guidance and resources to help you navigate the process of studying in the USA or Canada, opening doors to new opportunities and experiences.</p>
           </div>
         </div>
       </section>
 
-      {/*last section*/}
+      {/*Flyer Section */}
+      <section className="py-0 md:py-10">
+        <div className="max-w-6xl mx-auto px-4 md:px-8 flex flex-col md:flex-row">
+          <div className="md:w-1/2 flex flex-col space-y-4 md:space-y-4">
+            <Image src="/images/outsource.png" alt="Logo" width={450} height={450} className="rounded-lg" />
+          </div>
+
+          <div className="md:w-1/2 flex flex-col">
+            <h2 className="text-4xl font-bold text-orange-500 mb-8 mt-5">Why Businesses Outsource?</h2>
+            <h3 className="text-2xl mb-4">Improving Profitability and Efficiency are the primary factors that influence companies decisions to outsource.</h3>
+          </div>
+        </div>
+      </section>
+
       <section className="py-10">
         <div className="max-w-6xl mx-auto px-4 md:px-8 flex flex-col md:flex-row">
           <div className="md:w-1/2 mb-8 md:mb-0">
@@ -102,13 +120,13 @@ export default function Home() {
             <div className="flex items-start space-x-4 mb-4">
               <Image src="/images/verify.png" alt="icon" width={24} height={24} />
               <p className="text-gray-300">
-                AfricaTechcity is a leading choice for businesses in West Africa and beyond, providing exceptional value through innovative technology solutions and deep industry expertise.
+                AfricaTechcity is a leading choice for businesses in West Africa and North America, providing exceptional value through innovative technology solutions and deep industry expertise.
               </p>
             </div>
             <div className="flex items-start space-x-4 mb-4">
               <Image src="/images/verify.png" alt="icon" width={24} height={24} />
               <p className="text-gray-300">
-                Our commitment to empowering clients with tailored software training, robust programming and database solutions, and flexible outsourcing options sets us apart.
+                Our commitment to empowering clients with tailored software training, a co-working space, college preparation, and flexible offshore outsourcing options sets us apart.
               </p>
             </div>
             <div className="flex items-start space-x-4 mb-4">
@@ -120,6 +138,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
     </div>
   );
 }
