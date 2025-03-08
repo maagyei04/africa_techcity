@@ -47,10 +47,10 @@ export default function AboutPage() {
                             projected to reach $435.89 billion by 2028.
                         </p>
                         <p className="text-gray-400 mb-8">
-                            Ghana is one of the top-performing African economies in the World Bank’s ease of doing
+                            Ghana is one of the top-performing African economies in the World Banks ease of doing
                             business index. Management consulting firm AT Kearney (Chicago) recently ranked Ghana
                             among the most competitive outsourcing destinations in the world. Well ahead of its African
-                            neighbors, including Nigeria and South Africa, Ghana’s economy is projected to grow at
+                            neighbors, including Nigeria and South Africa, Ghanas economy is projected to grow at
                             3.4%–5.0% in 2023-2028.
                         </p>
                     </div>
@@ -122,31 +122,26 @@ export default function AboutPage() {
                     <p className="text-gray-400 mb-8">
                         Comprised of dedicated professionals with diverse backgrounds in technology, entrepreneurship, and education...
                     </p>
-                    <div className="bg-darkBlue text-white">
-                        <section className="py-5">
-                            <div className="max-w-6xl mx-auto px-4 md:px-8 text-center overflow-hidden">
-                                <div className="carousel flex justify-center space-x-4">
-                                    {teamMembers.map((member, index) => (
-                                        <div key={index} className="bg-white text-darkBlue p-4 rounded-lg shadow-md shrink-0">
-                                            <Image
-                                                src={member.image}
-                                                alt={member.name}
-                                                width={200}
-                                                height={200}
-                                                className="rounded-t-lg"
-                                            />
-                                            <div className="p-4">
-                                                <h4 className="font-bold text-black">{member.name}</h4>
-                                                <p className='text-gray-500'>{member.position}</p>
-                                                <p className='text-gray-500'>{member.company}</p>
-                                                <p className='text-gray-500'>{member.location}</p>
-
-                                            </div>
-                                        </div>
-                                    ))}
+                    <div className="bg-darkBlue text-white overflow-x-auto scrollbar-hide">
+                        <div className="carousel flex space-x-4 py-5">
+                            {teamMembers.map((member, index) => (
+                                <div key={index} className="bg-white text-darkBlue p-4 rounded-lg shadow-md shrink-0">
+                                    <Image
+                                        src={member.image}
+                                        alt={member.name}
+                                        width={200}
+                                        height={200}
+                                        className="rounded-t-lg"
+                                    />
+                                    <div className="p-4">
+                                        <h4 className="font-bold text-black">{member.name}</h4>
+                                        <p className='text-gray-500'>{member.position}</p>
+                                        <p className='text-gray-500'>{member.company}</p>
+                                        <p className='text-gray-500'>{member.location}</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </section>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </section>

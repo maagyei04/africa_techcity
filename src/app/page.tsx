@@ -14,7 +14,7 @@ export default function Home() {
 
       {/*photos section*/}
       <section className="py-5 overflow-hidden">
-        <div className="carousel flex space-x-4">
+        <div className="carousel flex space-x-4 overflow-x-auto scrollbar-hide">
           <div className="shrink-0">
             <Image
               src="/images/h1.png"
