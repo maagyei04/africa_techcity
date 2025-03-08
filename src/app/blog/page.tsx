@@ -15,22 +15,22 @@ export default function BlogPage() {
         {
             category: 'Technology',
             title: 'The Future of AI and Machine Learning',
-            author: 'Dr. Jane Smith',
-            image: '/images/s1.png',
+            author: 'Mr Agyei Michael Addai',
+            image: '/images/aip.jpg',
             page: '/blog/future-of-ai-and-machine-learning',
         },
         {
             category: 'Entrepreneurship',
             title: 'Startup Success Stories: Lessons Learned',
-            author: 'John Doe',
+            author: 'Mr Agyei Michael Addai',
             image: '/images/a2.jpg',
             page: '/blog/startup-success-stories-lessons-learned',
         },
         {
             category: 'Business',
             title: 'Outsourcing Strategies for Small Businesses',
-            author: 'Sarah Johnson',
-            image: '/images/a1.png',
+            author: 'Mr Yaw Owusu',
+            image: '/images/as.jpg',
             page: '/blog/outsourcing-strategies-for-small-businesses',
         },
     ];
