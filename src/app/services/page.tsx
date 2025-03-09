@@ -49,7 +49,7 @@ export default function ServicePage() {
                         <h2 className="text-4xl font-bold mb-4 text-orange-500">Empowering Your</h2>
                         <h3 className="text-3xl font-bold text-orange-500 mb-4">Vision with Innovative Solutions</h3>
                         <p className="text-gray-400 mb-8">
-                            The Africa Techcities provides Co-Working Space, Software Training and Business Services.
+                            The Africa Techcities provides Co-Working Space, Software Training, College preparations and Business Services.
                         </p>
                         <p className="text-gray-400 mb-8">
                             Our commitment to excellence is demonstrated through our range of innovative services, tailored to support businesses and individuals in the tech & education landscape
@@ -58,11 +58,11 @@ export default function ServicePage() {
 
                     <div className="md:w-1/3">
                         <Image
-                            src="/images/s1.png"
+                            src="/images/afw.jpeg"
                             alt="Hero Image"
                             width={350}
                             height={350}
-                            className="rounded-lg"
+                            className="rounded-lg w-full h-auto"
                         />
                     </div>
                 </div>

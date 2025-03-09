@@ -13,15 +13,15 @@ export default function Home() {
       </main>
 
       {/*photos section*/}
-      <section className="py-5 overflow-hidden">
-        <div className="carousel flex space-x-4 overflow-x-auto scrollbar-hide">
+      <section className="py-5 overflow-hidden scrollbar-hide">
+        <div className="flex space-x-4 carousel">
           <div className="shrink-0">
             <Image
-              src="/images/h1.png"
+              src="/images/afo.jpeg"
               alt="Image 1"
               width={300}
-              height={200}
-              className="rounded-lg"
+              height={300}
+              className="rounded-lg w-[310px] h-[305px]"
             />
           </div>
           <div className="shrink-0">
@@ -29,8 +29,8 @@ export default function Home() {
               src="/images/h2.png"
               alt="Image 2"
               width={300}
-              height={200}
-              className="rounded-lg"
+              height={300}
+              className="rounded-lg w-[310px] h-[305px]"
             />
           </div>
           <div className="shrink-0">
@@ -38,17 +38,17 @@ export default function Home() {
               src="/images/h3.png"
               alt="Image 3"
               width={300}
-              height={200}
-              className="rounded-lg"
+              height={300}
+              className="rounded-lg w-[310px] h-[305px]"
             />
           </div>
           <div className="shrink-0">
             <Image
-              src="/images/h4.png"
+              src="/images/afs.jpeg"
               alt="Image 4"
               width={300}
-              height={200}
-              className="rounded-lg"
+              height={300}
+              className="rounded-lg w-[310px] h-[305px]"
             />
           </div>
         </div>

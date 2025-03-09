@@ -1,30 +1,55 @@
-import Image from 'next/image';
+"use client";
 
-const teamMembers = [
+import Image from 'next/image';
+import { useState } from 'react';
+
+interface TeamMember {
+    name: string;
+    position: string;
+    image: string;
+    company: string;
+    location: string;
+    bio: string;
+}
+
+const teamMembers: TeamMember[] = [
     {
         name: 'Mr Thomas Nash',
         position: 'Board Member',
         image: '/images/f7.png',
         company: 'Africa TechCity',
-        location: 'Washington DC'
+        location: 'Washington DC',
+        bio: 'Thomas W. Nash is the Chairman and CEO of Xalles Holdings Inc., a publicly listed Fintech holding company. He has expertise is in the Financial Supply Chain and payment services. Mr. Nash has provided strategic business advice to more than 200 firms worldwide from small firms to large organizations such as U.S. Bank, MasterCard, and Citibank. He also led the implementation of financial systems deployment within the U.S. Government&#39;s Department of Defense and Department of Homeland Security. Mr. Nash has also advised the Governments of Brazil, China, Hungary, Romania, and others. Mr. Nash has helped launch successful startup ventures in the payment, eCommerce and IT fields.'
     },
     {
         name: 'Mr Yaw Owusu',
         position: 'Managing Director',
         image: '/images/f6.png',
         company: 'Africa TechCity',
-        location: 'Kumasi, Ghana'
+        location: 'Kumasi, Ghana',
+        bio: 'Yaw Owusu founded Africa Techcities to provide offshore outsourcing services and develop high-end technology infrastructure in top-performing African economies. Mr. Owusu has appeared on BBC (United Kingdom), SABC TV (South Africa) and CCTV (China) to discuss developing smart city innovations in Africa. He was featured in the February 2016 edition of Forbes Afrique. Owusu worked for General Electric and IBM Global Services in Washington, DC before joining Goldman Sachs in New York. He studied in the EMBA program at Columbia Business School, 2001-2002 and majored in Mathematics and Economics at Albright College, Reading, Pennsylvania. He earned a certificate in Planning, Developing and Managing Technology Parks in 2007 from the Shanghai International Business Incubator.'
     },
     {
         name: 'Mr Joseph Adjei',
         position: 'Advisor',
         image: '/images/f5.png',
         company: 'Africa TechCity',
-        location: 'Washington DC'
+        location: 'Washington DC',
+        bio: 'Mr. Joseph Adjei is a renowned advisor and thought leader in the technology and education sectors. With a wealth of experience spanning several decades, he provides invaluable guidance and insights to the AfricaTechcity team. Mr. Adjei\'s expertise in emerging technologies, educational initiatives, and global trends has been instrumental in shaping the company\'s strategic vision and ensuring its continued success.'
     },
 ];
 
 export default function AboutPage() {
+    const [selectedMember, setSelectedMember] = useState<TeamMember | null>(null);
+
+    const handleMemberClick = (member: TeamMember) => {
+        setSelectedMember(member);
+    };
+
+    const closeModal = () => {
+        setSelectedMember(null);
+    };
+
     return (
         <div className="bg-darkBlue text-white">
             <main className="py-20">
@@ -57,11 +82,11 @@ export default function AboutPage() {
 
                     <div className="md:w-1/3">
                         <Image
-                            src="/images/a1.png"
+                            src="/images/afo.jpeg"
                             alt="Hero Image"
                             width={350}
                             height={350}
-                            className="rounded-lg"
+                            className="rounded-lg w-full h-full"
                         />
                     </div>
                 </div>
@@ -75,11 +100,11 @@ export default function AboutPage() {
                     </div>
                     <div className="bg-transparent border border-orange-500 p-6 items-center justify-center align-center flex flex-col">
                         <h4 className="text-xl text-orange-500 font-bold mb-2">Our Vission</h4>
-                        <p className='text-orange-500 text-center'>At AfricaTechcity, our mission is to drive innovation and foster growth in West Africas tech landscape. We aim to empower individuals and businesses with the skills and tools necessary to thrive in the digital age</p>
+                        <p className='text-orange-500 text-center'>Our vision is to establish AfricaTechcity as a leading hub for technological excellence, fostering an ecosystem that drives innovation, empowers individuals, and propels the growth of West Africa`s digital economy.</p>
                     </div>
                     <div className="bg-orange-500 p-6">
                         <Image
-                            src="/images/h2.png"
+                            src="/images/afceo.jpeg"
                             alt="Hero Image"
                             width={450}
                             height={450}
@@ -119,19 +144,26 @@ export default function AboutPage() {
             <section className="py-20 bg-darkBlueLight">
                 <div className="max-w-6xl mx-auto px-4 md:px-8 text-center">
                     <h3 className="text-3xl font-bold mb-4 text-orange-500">Meet Our Founders</h3>
-                    <p className="text-gray-400 mb-8">
+                    <p className="text-gray-400 mb-2">
                         Comprised of dedicated professionals with diverse backgrounds in technology, entrepreneurship, and education...
                     </p>
-                    <div className="bg-darkBlue text-white overflow-x-auto scrollbar-hide">
-                        <div className="carousel flex space-x-4 py-5">
+                    <p className="text-gray-400 mb-8">
+                        Click on a founder`s image to learn more about their background and experience.
+                    </p>
+                    <div className="bg-darkBlue text-white overflow-x-auto scrollbar-hide flex justify-center">
+                        <div className="flex space-x-4 py-5 carousel">
                             {teamMembers.map((member, index) => (
-                                <div key={index} className="bg-white text-darkBlue p-4 rounded-lg shadow-md shrink-0">
+                                <div
+                                    key={index}
+                                    className="bg-white text-darkBlue p-4 rounded-lg shadow-md shrink-0 cursor-pointer"
+                                    onClick={() => handleMemberClick(member)}
+                                >
                                     <Image
                                         src={member.image}
                                         alt={member.name}
                                         width={200}
                                         height={200}
-                                        className="rounded-t-lg"
+                                        className="rounded-t-lg mx-auto"
                                     />
                                     <div className="p-4">
                                         <h4 className="font-bold text-black">{member.name}</h4>
@@ -145,6 +177,50 @@ export default function AboutPage() {
                     </div>
                 </div>
             </section>
+
+            {selectedMember && (
+                <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+                    <div className="bg-white rounded-lg p-8 max-w-2xl">
+                        <div className="flex justify-between items-center mb-4">
+                            <h3 className="text-2xl font-bold">{selectedMember.name}</h3>
+                            <button
+                                className="text-gray-500 hover:text-gray-700 focus:outline-none"
+                                onClick={closeModal}
+                            >
+                                <svg
+                                    className="h-6 w-6"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        strokeWidth={2}
+                                        d="M6 18L18 6M6 6l12 12"
+                                    />
+                                </svg>
+                            </button>
+                        </div>
+                        <p className="text-gray-700 mb-4">{selectedMember.bio}</p>
+                        <div className="flex justify-between">
+                            <div>
+                                <p className="text-gray-500">{selectedMember.position}</p>
+                                <p className="text-gray-500">{selectedMember.company}</p>
+                                <p className="text-gray-500">{selectedMember.location}</p>
+                            </div>
+                            <Image
+                                src={selectedMember.image}
+                                alt={selectedMember.name}
+                                width={150}
+                                height={150}
+                                className="rounded-lg"
+                            />
+                        </div>
+                    </div>
+                </div>
+            )}
         </div>
     );
 }
