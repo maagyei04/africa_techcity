@@ -129,8 +129,10 @@ export default function ContactPage() {
                         <p className="text-gray-500">
                             Email us and well get to you within 24 hours
                         </p>
-                        <p className="mb-2 text-gray-500">
+                        <p className="text-gray-500">
                             support@africatechcity.com
+                        </p>
+                        <p className="mb-2 text-gray-500">
                             yawowusu@africatechcity.com
                         </p>
 
