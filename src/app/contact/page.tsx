@@ -64,7 +64,7 @@ export default function ContactPage() {
         <div className="bg-darkBlue text-white min-h-screen py-20">
             <div className="max-w-6xl mx-auto px-4 md:px-8 items-center">
                 <div className="text-center">
-                    <h2 className="text-4xl font-bold text-orange-500 mb-4">Lets Connect</h2>
+                    <h2 className="text-4xl font-bold text-orange-500 mb-4">Let&apos;s Connect</h2>
                     <p className="text-lg mb-8 text-gray-500">Get in touch with us today</p>
                 </div>
                 <div className="grid md:grid-cols-2 gap-8">
@@ -131,6 +131,7 @@ export default function ContactPage() {
                         </p>
                         <p className="mb-2 text-gray-500">
                             support@africatechcity.com
+                            yawowusu@africatechcity.com
                         </p>
 
                         <h4 className="text-l mb-2">Whatsapp</h4>
