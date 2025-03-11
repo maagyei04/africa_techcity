@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Africa TechCity",
-  description: "AfricaTechCity",
+  description: "Africa TechCity - Empowering Your Vision with Innovative Solutions",
 };
 
 export default function RootLayout({

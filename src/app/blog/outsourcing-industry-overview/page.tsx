@@ -45,11 +45,11 @@ export default function BlogPreview() {
                                 <p className="text-gray-400">
                                     The outsourcing industry has evolved significantly over the past few decades, becoming an integral part of modern business operations. Originally emerging as a cost-cutting strategy, outsourcing has since transformed into a strategic approach for companies to access specialized expertise, enhance operational efficiency, and focus on core competencies.
 
-                                    The roots of outsourcing can be traced back to the 1960s when companies began contracting out non-core functions like payroll processing and data entry. However, it wasnt until the late 1980s and early 1990s that outsourcing gained widespread adoption, driven by advancements in technology and globalization.
+                                    The roots of outsourcing can be traced back to the 1960s when companies began contracting out non-core functions like payroll processing and data entry. However, it wasn&apos;t until the late 1980s and early 1990s that outsourcing gained widespread adoption, driven by advancements in technology and globalization.
 
                                     Today, outsourcing encompasses a wide range of services, from IT and software development to customer support, accounting, and marketing. It has become a crucial tool for businesses of all sizes, enabling them to tap into global talent pools, leverage economies of scale, and remain agile in an ever-changing market landscape.
 
-                                    The significance of outsourcing in todays business landscape cannot be overstated. It allows companies to focus on their core competencies while delegating non-essential tasks to specialized service providers. This not only improves operational efficiency but also enables businesses to access expertise and resources that may be unavailable or costly to maintain in-house.
+                                    The significance of outsourcing in today&apos;s business landscape cannot be overstated. It allows companies to focus on their core competencies while delegating non-essential tasks to specialized service providers. This not only improves operational efficiency but also enables businesses to access expertise and resources that may be unavailable or costly to maintain in-house.
 
                                     Furthermore, outsourcing has facilitated global collaboration and enabled companies to expand their reach and tap into new markets. By leveraging the skills and resources of service providers in different regions, businesses can gain a competitive edge and adapt to changing market demands more effectively.
                                 </p>
@@ -117,7 +117,7 @@ export default function BlogPreview() {
                         {openSections.includes(3) && (
                             <div className="mt-4">
                                 <p className="text-gray-400">
-                                    The growing practice of telecommuting from workers’ and executives’ homes and temporary
+                                    The growing practice of telecommuting from workers&apos; and executives&apos; homes and temporary
                                     residence, including hotels, resorts, camps, etc. According to researchers at MIT, almost 50% of
                                     the American workforce reports working remotely at least once a week. As working remotely
                                     becomes more trendy, companies will begin to expand their search for skilled labor beyond their

@@ -56,8 +56,6 @@ export default function ContactPage() {
                 setMessageSent(false);
             }, 3000);
         }
-
-
     };
 
     return (
@@ -122,12 +120,12 @@ export default function ContactPage() {
                     <div className="bg-darkBlueLight p-8 rounded-xl border border-gray-700">
                         <h3 className="text-xl font-bold mb-4">Contact Info</h3>
                         <p className="mb-4 text-gray-500">
-                            We&apos;d love to hear from you! Whether you have questions, feedback, or need assistance, our team is here to help. Get in touch with us through the contact form, email, social media or by clicking the floating WhatsApp button on the screen. We strive to respond within 24 hours on business days.
+                            We&apos;d love to hear from you! Whether you have questions, feedback, or need assistance, our team is here to help. Get in touch with us through the contact form, email, social media, or by clicking the floating WhatsApp button on the screen. We strive to respond within 24 hours on business days.
                         </p>
 
                         <h4 className="text-l">Email Support</h4>
                         <p className="text-gray-500 mb-2">
-                            Email us and well get to you within 24 hours
+                            Email us, and we&apos;ll get to you within 24 hours.
                         </p>
                         <p className="text-gray-500">
                             support@africatechcity.com
@@ -138,7 +136,7 @@ export default function ContactPage() {
 
                         <h4 className="text-l mb-2">Whatsapp</h4>
                         <p className="text-gray-500">
-                            Our WhatsApp contact is always active
+                            Our WhatsApp contact is always active.
                         </p>
                         <p className="mb-2 text-gray-500">
                             (+233) 246 531 380

@@ -19,7 +19,7 @@ export default function BlogPreview() {
             <div className="max-w-6xl mx-auto px-4 md:px-8">
                 <div className="mb-8">
                     <h1 className="text-4xl font-bold mb-4">Outsourcing Strategies for Small Businesses</h1>
-                    <p className="text-gray-400 mb-4">By Mr Yaw Owusu</p>
+                    <p className="text-gray-400 mb-4">By Mr. Yaw Owusu</p>
                     <Image
                         src="/images/as.jpg"
                         alt="Blog Preview"
@@ -72,15 +72,15 @@ export default function BlogPreview() {
                                 <p className="text-gray-400">
                                     Selecting the right outsourcing partner is crucial for the success of your outsourcing strategy. Here are some tips to help you evaluate and choose a reliable partner:
 
-                                    1. Check references and reviews: Ask for references from previous clients and thoroughly check their reviews and testimonials. This will give you insights into the partners reliability, quality of work, and communication skills.
+                                    1. Check references and reviews: Ask for references from previous clients and thoroughly check their reviews and testimonials. This will give you insights into the partner&apos;s reliability, quality of work, and communication skills.
 
-                                    2. Review their portfolio: Examine the partners portfolio to assess their expertise and experience in your required domain. Look for projects similar to your needs and evaluate the quality of their work.
+                                    2. Review their portfolio: Examine the partner&apos;s portfolio to assess their expertise and experience in your required domain. Look for projects similar to your needs and evaluate the quality of their work.
 
-                                    3. Consider communication and cultural fit: Effective communication is essential for successful outsourcing. Evaluate the partners communication skills, responsiveness, and ability to understand your requirements. Additionally, consider cultural compatibility to ensure a smooth working relationship.
+                                    3. Consider communication and cultural fit: Effective communication is essential for successful outsourcing. Evaluate the partner&apos;s communication skills, responsiveness, and ability to understand your requirements. Additionally, consider cultural compatibility to ensure a smooth working relationship.
 
-                                    4. Assess their processes and methodologies: Understand the partners processes, project management methodologies, and quality assurance practices. Ensure that their approach aligns with your expectations and requirements.
+                                    4. Assess their processes and methodologies: Understand the partner&apos;s processes, project management methodologies, and quality assurance practices. Ensure that their approach aligns with your expectations and requirements.
 
-                                    5. Evaluate their security measures: If youll be sharing sensitive data or intellectual property, assess the partners data security measures, such as encryption, access controls, and compliance with relevant regulations.
+                                    5. Evaluate their security measures: If you&apos;ll be sharing sensitive data or intellectual property, assess the partner&apos;s data security measures, such as encryption, access controls, and compliance with relevant regulations.
 
                                     6. Consider their scalability and flexibility: Choose a partner that can scale their resources and services as your business grows or requirements change. Flexibility is essential to adapt to evolving needs.
 

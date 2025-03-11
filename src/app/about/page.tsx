@@ -14,15 +14,15 @@ interface TeamMember {
 
 const teamMembers: TeamMember[] = [
     {
-        name: 'Mr Thomas Nash',
+        name: 'Mr. Thomas Nash',
         position: 'Board Member',
         image: '/images/f7.png',
         company: 'Africa TechCity',
         location: 'Washington DC',
-        bio: 'Thomas W. Nash is the Chairman and CEO of Xalles Holdings Inc., a publicly listed Fintech holding company. He has expertise is in the Financial Supply Chain and payment services. Mr. Nash has provided strategic business advice to more than 200 firms worldwide from small firms to large organizations such as U.S. Bank, MasterCard, and Citibank. He also led the implementation of financial systems deployment within the U.S. Government&#39;s Department of Defense and Department of Homeland Security. Mr. Nash has also advised the Governments of Brazil, China, Hungary, Romania, and others. Mr. Nash has helped launch successful startup ventures in the payment, eCommerce and IT fields.'
+        bio: 'Thomas W. Nash is the Chairman and CEO of Xalles Holdings Inc., a publicly listed Fintech holding company. He has expertise in the Financial Supply Chain and payment services. Mr. Nash has provided strategic business advice to more than 200 firms worldwide from small firms to large organizations such as U.S. Bank, MasterCard, and Citibank. He also led the implementation of financial systems deployment within the U.S. Government&apos;s Department of Defense and Department of Homeland Security. Mr. Nash has also advised the Governments of Brazil, China, Hungary, Romania, and others. Mr. Nash has helped launch successful startup ventures in the payment, eCommerce and IT fields.'
     },
     {
-        name: 'Mr Yaw Owusu',
+        name: 'Mr. Yaw Owusu',
         position: 'Managing Director',
         image: '/images/f6.png',
         company: 'Africa TechCity',
@@ -30,12 +30,12 @@ const teamMembers: TeamMember[] = [
         bio: 'Yaw Owusu founded Africa Techcities to provide offshore outsourcing services and develop high-end technology infrastructure in top-performing African economies. Mr. Owusu has appeared on BBC (United Kingdom), SABC TV (South Africa) and CCTV (China) to discuss developing smart city innovations in Africa. He was featured in the February 2016 edition of Forbes Afrique. Owusu worked for General Electric and IBM Global Services in Washington, DC before joining Goldman Sachs in New York. He studied in the EMBA program at Columbia Business School, 2001-2002 and majored in Mathematics and Economics at Albright College, Reading, Pennsylvania. He earned a certificate in Planning, Developing and Managing Technology Parks in 2007 from the Shanghai International Business Incubator.'
     },
     {
-        name: 'Mr Joseph Adjei',
+        name: 'Mr. Joseph Adjei',
         position: 'Advisor',
         image: '/images/f5.png',
         company: 'Africa TechCity',
         location: 'Washington DC',
-        bio: 'Mr. Joseph Adjei is a renowned advisor and thought leader in the technology and education sectors. With a wealth of experience spanning several decades, he provides invaluable guidance and insights to the AfricaTechcity team. Mr. Adjei\'s expertise in emerging technologies, educational initiatives, and global trends has been instrumental in shaping the company\'s strategic vision and ensuring its continued success.'
+        bio: 'Mr. Joseph Adjei is a renowned advisor and thought leader in the technology and education sectors. With a wealth of experience spanning several decades, he provides invaluable guidance and insights to the Africa Techcity team. Mr. Adjei&apos;s expertise in emerging technologies, educational initiatives, and global trends has been instrumental in shaping the company&apos;s strategic vision and ensuring its continued success.'
     },
 ];
 
@@ -56,7 +56,7 @@ export default function AboutPage() {
                 <div className="max-w-6xl mx-auto px-4 md:px-4 flex flex-col md:flex-row justify-between items-center space-x-8">
                     <div className="md:w-2/3">
                         <h2 className="text-4xl font-bold mb-4">Discover Our Journey:</h2>
-                        <h3 className="text-3xl font-bold text-orange-500 mb-4">Innovation and Impact at AfricaTechcity</h3>
+                        <h3 className="text-3xl font-bold text-orange-500 mb-4">Innovation and Impact at Africa Techcity</h3>
                         <p className="text-gray-400 mb-8">
                             Our values of integrity, collaboration, and innovation guide us in every project we undertake, ensuring that we deliver exceptional results while fostering a supportive community.
                         </p>
@@ -72,10 +72,10 @@ export default function AboutPage() {
                             projected to reach $435.89 billion by 2028.
                         </p>
                         <p className="text-gray-400 mb-8">
-                            Ghana is one of the top-performing African economies in the World Banks ease of doing
+                            Ghana is one of the top-performing African economies in the World Bank&apos;s ease of doing
                             business index. Management consulting firm AT Kearney (Chicago) recently ranked Ghana
                             among the most competitive outsourcing destinations in the world. Well ahead of its African
-                            neighbors, including Nigeria and South Africa, Ghanas economy is projected to grow at
+                            neighbors, including Nigeria and South Africa, Ghana&apos;s economy is projected to grow at
                             3.4%–5.0% in 2023-2028.
                         </p>
                     </div>
@@ -96,11 +96,11 @@ export default function AboutPage() {
                 <div className="max-w-6xl mx-auto px-4 md:px-8 grid md:grid-cols-3">
                     <div className="bg-orange-500 p-6 items-center justify-center align-center flex flex-col">
                         <h4 className="text-xl font-bold mb-2 text-[#0B2238]">Our Mission</h4>
-                        <p className='text-[#0B2238] text-center'>At AfricaTechcity, our mission is to drive innovation and foster growth in West Africas tech landscape. We aim to empower individuals and businesses with the skills and tools necessary to thrive in the digital age</p>
+                        <p className='text-[#0B2238] text-center'>At Africa Techcity, our mission is to drive innovation and foster growth in West Africa&apos;s tech landscape. We aim to empower individuals and businesses with the skills and tools necessary to thrive in the digital age</p>
                     </div>
                     <div className="bg-transparent border border-orange-500 p-6 items-center justify-center align-center flex flex-col">
-                        <h4 className="text-xl text-orange-500 font-bold mb-2">Our Vission</h4>
-                        <p className='text-orange-500 text-center'>Our vision is to establish AfricaTechcity as a leading hub for technological excellence, fostering an ecosystem that drives innovation, empowers individuals, and propels the growth of West Africa`s digital economy.</p>
+                        <h4 className="text-xl text-orange-500 font-bold mb-2">Our Vision</h4>
+                        <p className='text-orange-500 text-center'>Our vision is to establish Africa Techcity as a leading hub for technological excellence, fostering an ecosystem that drives innovation, empowers individuals, and propels the growth of West Africa&apos;s digital economy.</p>
                     </div>
                     <div className="bg-orange-500 p-6">
                         <Image
@@ -119,7 +119,7 @@ export default function AboutPage() {
                     <h3 className="text-4xl font-bold mb-4">Seamlessly integration from</h3>
                     <h2 className="text-4xl font-bold text-orange-500 mb-8">Design to Development</h2>
                     <p className="text-gray-400 mb-8">
-                        AfricaTechcity directly with the tools you use everyday. We fit your flow so you can stay in yours.
+                        Africa Techcity directly with the tools you use everyday. We fit your flow so you can stay in yours.
                     </p>
                     <div className="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-8">
                         <div className="flex flex-col items-start">
@@ -135,7 +135,7 @@ export default function AboutPage() {
                         <div className="flex flex-col items-start">
                             <Image src="/images/about1.png" alt="Customer-Centricity" width={350} height={350} className="w-full h-auto" />
                             <h4 className="font-bold mt-2">Customer-Centricity</h4>
-                            <p className="text-gray-400 text-left">We are committed to delivering outstanding results that address our customers needs</p>
+                            <p className="text-gray-400 text-left">We are committed to delivering outstanding results that address our customers&apos; needs</p>
                         </div>
                     </div>
                 </div>
@@ -148,7 +148,7 @@ export default function AboutPage() {
                         Comprised of dedicated professionals with diverse backgrounds in technology, entrepreneurship, and education...
                     </p>
                     <p className="text-gray-400 mb-8">
-                        Click on a founder`s image to learn more about their background and experience.
+                        Click on a founder&apos;s image to learn more about their background and experience.
                     </p>
                     <div className="bg-darkBlue text-white overflow-x-auto scrollbar-hide flex justify-center">
                         <div className="flex space-x-4 py-5 carousel">

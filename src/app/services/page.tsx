@@ -6,7 +6,7 @@ const services = [
         title: 'Coworking Space',
         description: [
             'Share furnished office space, complete with broadband access, laptops &amp; other tech gadgets.',
-            'Daily, weekly and monthly usage options.',
+            'Daily, weekly and monthly usage options.'
         ]
     },
     {
@@ -27,7 +27,7 @@ const services = [
             'Database Development',
             'Business Communication and Technical Writing',
             'Customer Service',
-            'Digital Marketing &amp; Sales',
+            'Digital Marketing &amp; Sales'
         ]
     },
     {
@@ -35,9 +35,9 @@ const services = [
         title: 'Study in the USA/Canada',
         description: [
             'Smart Preparatory courses for SAT, GMAT, GRE.',
-            'For admission to universities in the USA, Canada and other countries.',
+            'For admission to universities in the USA, Canada and other countries.'
         ]
-    },
+    }
 ];
 
 export default function ServicePage() {
@@ -52,7 +52,7 @@ export default function ServicePage() {
                             The Africa Techcities provides Co-Working Space, Software Training, College preparations and Business Services.
                         </p>
                         <p className="text-gray-400 mb-8">
-                            Our commitment to excellence is demonstrated through our range of innovative services, tailored to support businesses and individuals in the tech & education landscape
+                            Our commitment to excellence is demonstrated through our range of innovative services, tailored to support businesses and individuals in the tech &amp; education landscape
                         </p>
                     </div>
 
@@ -79,7 +79,7 @@ export default function ServicePage() {
                             <span className="text-orange-500">Unlocking</span> Potential Through <span className="text-blue-500">Technology</span> and Expertise
                         </p>
                         <p className="text-lg font-bold mt-2 text-gray-500">
-                            Explore how AfricaTechcity can help you achieve your goals:
+                            Explore how Africa Techcity can help you achieve your goals:
                         </p>
                         {services.map((service, index) => (
                             <div key={index} className="flex items-center mt-4">

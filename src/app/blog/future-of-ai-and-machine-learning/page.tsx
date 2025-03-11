@@ -19,7 +19,7 @@ export default function BlogPreview() {
             <div className="max-w-6xl mx-auto px-4 md:px-8">
                 <div className="mb-8">
                     <h1 className="text-4xl font-bold mb-4">The Future of AI and Machine Learning</h1>
-                    <p className="text-gray-400 mb-4">By Mr Agyei Michael Addai</p>
+                    <p className="text-gray-400 mb-4">By Mr. Agyei Michael Addai</p>
                     <Image
                         src="/images/aip.jpg"
                         alt="AI and Machine Learning"
@@ -78,7 +78,7 @@ export default function BlogPreview() {
 
                                     Computer vision, powered by deep learning algorithms, has enabled machines to accurately identify and classify objects, faces, and scenes in images and videos. This technology has found applications in self-driving cars, security systems, and medical imaging analysis.
 
-                                    Natural language processing (NLP) has made significant strides, allowing machines to understand, interpret, and generate human language. Chatbots, virtual assistants, and language translation tools are just a few examples of NLPs practical applications.
+                                    Natural language processing (NLP) has made significant strides, allowing machines to understand, interpret, and generate human language. Chatbots, virtual assistants, and language translation tools are just a few examples of NLP&apos;s practical applications.
 
                                     Furthermore, the integration of AI and machine learning with other emerging technologies, such as the Internet of Things (IoT), robotics, and augmented/virtual reality, is opening up new frontiers. Intelligent systems can now process vast amounts of data from connected devices, enabling predictive maintenance, smart home automation, and personalized healthcare solutions.
                                 </p>
