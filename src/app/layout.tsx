@@ -4,6 +4,7 @@ import "@/styles/globals.css";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
 import WhatsappComponent from "@/components/UI/whatsapp";
+import Head from "next/head";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,6 +28,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <title>Africa TechCity - Empowering Your Vision</title>
+        <meta name="description" content="Join a community where creativity meets purpose at Africa TechCity." />
+        <meta name="keywords" content="Africa TechCity, technology, outsourcing, software training" />
+        <link rel="canonical" href="https://www.africatechcity.com" />
+      </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#0B2238]`}
       >
