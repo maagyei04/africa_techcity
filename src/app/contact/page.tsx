@@ -64,7 +64,7 @@ export default function ContactPage() {
         <div className="bg-darkBlue text-white min-h-screen py-20">
             <div className="max-w-6xl mx-auto px-4 md:px-8 items-center">
                 <div className="text-center">
-                    <h2 className="text-4xl font-bold text-orange-500 mb-4">Let&apos;s Connect</h2>
+                    <h2 className="text-4xl font-bold text-orange-500 mb-4 italic">Let&apos;s Connect</h2>
                     <p className="text-lg mb-8 text-gray-500">Get in touch with us today</p>
                 </div>
                 <div className="grid md:grid-cols-2 gap-8">
@@ -125,15 +125,15 @@ export default function ContactPage() {
                             Wed love to hear from you! Whether you have questions, feedback, or need assistance, our team is here to help. Get in touch with us through the contact form, email, social media or by clicking the floating WhatsApp button on the screen. We strive to respond within 24 hours on business days.
                         </p>
 
-                        <h4 className="text-l mb-2">Email Support</h4>
-                        <p className="text-gray-500">
+                        <h4 className="text-l">Email Support</h4>
+                        <p className="text-gray-500 mb-2">
                             Email us and well get to you within 24 hours
                         </p>
                         <p className="text-gray-500">
                             support@africatechcity.com
                         </p>
                         <p className="mb-2 text-gray-500">
-                            yawowusu@africatechcity.com
+                            yowusu@africatechcity.com
                         </p>
 
                         <h4 className="text-l mb-2">Whatsapp</h4>
@@ -144,14 +144,15 @@ export default function ContactPage() {
                             (+233) 246 531 380
                         </p>
 
-                        <h4 className="text-l mb-2">Address</h4>
-                        <p className="text-gray-500">
+                        <h4 className="text-l">Address</h4>
+                        <p className="text-gray-500 mb-2">
                             Locate Us At:
                         </p>
                         <p className="mb-2 text-gray-500">
-                            No.16 Nii Amaah Ollenu Street
-                            Airport West Residential Area
-                            Accra, Ghana
+                            Africa Techcity <br />
+                            Kumasi City Mall <br />
+                            133 Lake Road <br />
+                            Kumasi, Ghana
                         </p>
                     </div>
                 </div>
